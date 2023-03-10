@@ -145,11 +145,12 @@ nav ul {
 a {
     color: black;
     text-decoration: none;
-   
+
 }
+
 .contenido {
     margin-top: 15vh;
-    
+
 
 }
 
@@ -221,7 +222,7 @@ a {
 }
 
 .sobreMi {
-    
+
     height: 110vh;
 }
 
@@ -279,12 +280,17 @@ a {
 
 }
 
-.contenedor {
+#contenedor {
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 90px;
 }
+
+
+
+
 
 .card {
     width: 300px;
@@ -297,6 +303,7 @@ a {
     margin-top: 100px;
     position: relative;
     background-color: white;
+
 
 }
 
@@ -334,7 +341,7 @@ a {
 
 .card:hover img {
     transform: translateY(-90px);
-    
+
 }
 
 .card:hover h2 {
@@ -373,7 +380,7 @@ form:has(select > option[value="mysql"]:checked)+.contenedor .mysql {
 #contact {
     font-size: 3rem;
     margin: 15px;
-    
+
 
 }
 
@@ -413,9 +420,9 @@ form:has(select > option[value="mysql"]:checked)+.contenedor .mysql {
     display: flex;
     justify-content: center;
     margin: 20px;
-  }
-  
-  button {
+}
+
+button {
     background-color: #ccc;
     border: none;
     border-radius: 5px;
@@ -424,8 +431,8 @@ form:has(select > option[value="mysql"]:checked)+.contenedor .mysql {
     margin: 10px;
     padding: 10px;
     text-transform: uppercase;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #555;
-  }
+}
