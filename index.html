@@ -122,7 +122,7 @@
             </div>
         </div>
         <form>
-            <select name="modulo" id="modulo" class="form-control">
+            <select name="modulo" id="modulo" class="form-control" onchange="filtrarProyectos()">
                 <option value="all">All</option>
                 <option value="java">Java</option>
                 <option value="html">HTML CSS JS</option>
@@ -130,8 +130,8 @@
             </select>
         </form>
         <!-- <div class="titulo-porfolio">Portfolio</div> -->
-        <div class="contenedor">
-            <div class="card card1">
+        <div id="contenedor">
+            <div class="card" data-tecnologia="java">
                 <img src="../JoseMariaPerezVazquez_Portfolio/media/img/java-icon.svg" alt="iconJava">
                 <h2 class="java">JAVA</h2>
                 <div class="texto">
@@ -146,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="card card2">
+            <div class="card" data-tecnologia="html">
                 <img src="../JoseMariaPerezVazquez_Portfolio/media/img/htmlcssjs.png" alt="IconHtmlCssJs">
                 <h2 class="html">HTML CSS JS</h2>
                 <div class="texto">
@@ -161,7 +161,7 @@
                 </div>
             </div>
 
-            <div class="card card3">
+            <div class="card card3" data-tecnologia="mysql">
                 <img src="../JoseMariaPerezVazquez_Portfolio/media/img/mysql-official.svg" alt="IconMysql" height="150"
                     width="300">
                 <h2 class="mysql">MYSQL</h2>

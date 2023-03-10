@@ -41,3 +41,19 @@ function cambiarColores(color) {
       break;
   }
 }
+
+//2
+
+function filtrarProyectos() {
+  var tecnologiaSeleccionada = document.getElementById("modulo").value;
+  var proyectos = document.getElementById("contenedor").children;
+  for (var i = 0; i < proyectos.length; i++) {
+    var proyecto = proyectos[i];
+    var tecnologias = proyecto.getAttribute("data-tecnologia");
+    if (tecnologiaSeleccionada === "all" || tecnologias.indexOf(tecnologiaSeleccionada) !== -1) {
+      proyecto.style.display = "block";
+    } else {
+      proyecto.style.display = "none";
+    }
+  }
+}
