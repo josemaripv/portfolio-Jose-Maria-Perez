@@ -1,0 +1,410 @@
+/*INICIAL (Bootstrap lo trae por defecto)*/
+
+@charset "UTF-8";
+
+body {
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(#fdfdfd, #71bfe0);
+}
+
+:root {
+    --scheme-color1: #F8F8FF;
+    --scheme-color2: #CACACA;
+    --scheme-color3: #9B9B9B;
+    --scheme-color4: #6D6D6D;
+    --scheme-color5: #3E3E3E;
+    --scheme-color6: #1E1E1E;
+    --main-font: 'Roboto', sans-serif;
+    --main-font-color: #181818;
+    --secondary-font-color: #f0f0f0;
+    --main-font-color-soft: #181818B3;
+    --secondary-font-color-soft: #f0f0f0B3;
+    --rem-value: 10px;
+    --font-size: 16px;
+    --spaces: 1rem;
+    --success-color: #28a745 !important;
+    --danger-color: #bd2130 !important;
+    --warning-color: #ffc107 !important;
+    --info-color: aquamarine !important;
+    --bttn-color: #007bff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-font-color: #f0f0f0;
+        --secondary-font-color: #181818;
+        --main-font-color-soft: #f0f0f0B3;
+        --secondary-font-color-soft: #181818B3;
+        --scheme-color1: #1E1E1E;
+        --scheme-color2: #3E3E3E;
+        --scheme-color3: #6D6D6D;
+        --scheme-color4: #9B9B9B;
+        --scheme-color5: #CACACA;
+        --scheme-color6: #F8F8FF;
+    }
+}
+
+@media (prefers-contrast: high) {
+    :root {
+        --main-font-color: black;
+        --secondary-font-color: white;
+        --success-color: green !important;
+        --danger-color: red !important;
+        --warning-color: yellow !important;
+        --info-color: aqua !important;
+        --bttn-color: blue !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        -webkit-animation: none !important;
+        animation: none !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: var(--rem-value);
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+@media (min-width: 576px) {
+    .container-bp {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-bp {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-bp {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-bp {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-bp {
+        max-width: 1400px;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    background-color: white;
+    z-index: +1;
+}
+
+.logo {
+    width: 10vw;
+}
+
+nav {
+    width: 150vw;
+}
+
+nav ul {
+    padding: 0;
+    width: 80vw;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+   
+}
+.contenido {
+    margin-top: 15vh;
+    
+
+}
+
+#foto {
+    display: flex;
+    justify-content: center;
+
+}
+
+#foto img:hover {
+    cursor: pointer;
+    animation-name: agrandar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes agrandar {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+.presentacion-titulo {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.presentacion-enlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion {
+    display: flex;
+}
+
+.presentacion p {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.presentacion div>img {
+    margin-left: 2rem;
+    margin-top: 3vh;
+
+}
+
+.sobreMi h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.sobreMi h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.sobreMi {
+    
+    height: 110vh;
+}
+
+.perfil {
+    float: left;
+    width: 50vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contenidoSobreMi {
+    display: flex;
+    flex-direction: row;
+}
+
+.datos {
+    float: right;
+    width: 50vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.contenidoSobreMi img {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    border-style: inset;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+
+.titulo-porfolio {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+.contenedor {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #eeeeee;
+    border-radius: 14px;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    background-color: white;
+
+}
+
+.card img {
+    width: 60%;
+
+}
+
+.card h2 {
+    font-size: 16px;
+
+}
+
+.card .texto {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 0px 14px 14px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.card span {
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(150px);
+
+}
+
+.card:hover {
+    background: #fbfbfe;
+}
+
+.card:hover img {
+    transform: translateY(-90px);
+    
+}
+
+.card:hover h2 {
+    transform: translateY(-90px);
+}
+
+.card:hover .texto span {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+form:has(select > option[value="java"]:checked)+.contenedor .java,
+form:has(select > option[value="html"]:checked)+.contenedor .html,
+form:has(select > option[value="mysql"]:checked)+.contenedor .mysql {
+    color: green;
+    animation: escala 2s;
+}
+
+@keyframes escala {
+    50% {
+        transform: scale(2);
+    }
+}
+
+.form-control {
+    width: 100vw;
+    max-width: 70vw;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: rgb(189, 172, 172) 5px outset;
+}
+
+#contact {
+    font-size: 3rem;
+    margin: 15px;
+    
+
+}
+
+#sendBttn {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    width: 10vw;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+#sendBttn:hover {
+    width: 20vw;
+    background: #d1d5d8;
+    cursor: pointer;
+
+}
+
+.pie {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100vw;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<!-- Para cambiar de modo oscuro "dark" a modo normal, simplemente cambiarlo por "light"-->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es mi portfolio personal">
+    <meta name="keywords" content="html, css, sass, bootstrap, js, portfolio, proyectos">
+    <meta name="language" content="EN">
+    <meta name="author" content="tumail@vedruna.es">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Tuesday, February 28th, 2023, 23:00pm">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+
+    <!-- Añado la fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- My css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- My scripts -->
+    <script type="text/javascript" src="js/app.js" defer></script>
+
+    <!-- Icono al lado del titulo -->
+    <link rel="jm icon" href="../JoseMariaPerezVazquez_Portfolio/media/icon/logo.png" type="image/xpng">
+
+    <!-- Titulo -->
+    <title>Jose Maria Perez Vazquez's portfolio</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../JoseMariaPerezVazquez_Portfolio/media/icon/logo.png" alt="logo" width="60" height="60"
+                href="index.html">
+        </div>
+        <nav>
+            <ul>
+                <a href="#foto">Inicio</a>
+                <a href="#SOBREMI">Sobre mi</a>
+                <a href="#modulo">Portfolio</a>
+                <a href="#contact">Contacto</a>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenido">
+        <div id="foto">
+            <img src="../JoseMariaPerezVazquez_Portfolio/media/icon/logo.png" alt="logo" width="150" height="150"
+                href="index.html">
+        </div>
+        <h1 class="presentacion-titulo">¿Quíen soy?</h1>
+        <div class="presentacion">
+            <div>
+                <img src="../JoseMariaPerezVazquez_Portfolio/media/img/fotoMia.png" alt="perfil" width="180"
+                    height="180">
+                <a class="presentacion-enlace"
+                    href="https://es.linkedin.com/in/jos%C3%A9-mar%C3%ADa-p%C3%A9rez-v%C3%A1zquez-867190233"
+                    target="_blank"><img src="../JoseMariaPerezVazquez_Portfolio/media/img/linkedin.png " width="30"
+                        height="30"></a>
+            </div>
+            <div>
+                <p>¡Hola! soy José María Pérez Vázquez y tengo 20 años. Soy una persona que le gusta aprender y trabajar
+                    para lograr sus objetivos. Desde siempre me ha interesado todo lo relacionado con el mundo de las
+                    empresas, como funcionan, que actividades se realizan en ella, como esta compuesta...</p>
+                <p>Por ellos, tras realizar el Bachillerato de Ciencias Sociales tomé un camino que me acercara más a
+                    este mundo que desconocía pero que tenía un gran interés. Continúe mis estudios en un Ciclo
+                    Formativo de Grado Superior en Administración y Finanzas el cual hizo que me gustara aún más todo lo
+                    relacionado con las empresas.</p>
+                <p>Actualmente, estoy realizando las prácticas de final de grado en el Hospital San Juan de Dios Sevilla
+                    trabajando en el departamento de Recursos Humanos.</p>
+                <p>Mi meta es adquirir todos los conocimientos posibles y poder desarrollarme de la mejor manera posible
+                    como profesional en el mundo laboral.</p>
+            </div>
+        </div>
+        <div class="sobreMi">
+            <h1 id="SOBREMI">Sobre Mi</h1>
+            <h2>Curriculum Vitael José María Pérez Vázquez</h2>
+            <div class="contenidoSobreMi">
+                <div class="perfil">
+                <h3>DATOS DE CONTACTO</h3>
+                <p>Teléfono Móvil: 653 907 868 </p>
+                <p>Correo electrónico: josemaria.pev@gmail.com</p>
+                <p>Dirección: Calle Flauta número 10</p>
+                <p>Código Postal: 41006</p>
+
+                <h3>PERFIL PERSONAL</h3>
+                <p>Técnico superior en Administración y Finanzas</p>
+
+                <img src="../JoseMariaPerezVazquez_Portfolio/media/img/calculadora.png" alt="finznas" width="220"
+                    height="220">
+            </div>
+            <div class="datos">
+                <h3>EXPERIENCIA LABORAL</h3>
+                <p>Apoyo negocio familiar en el sector de la carnicería y de cara al público (atención al cliente)</p>
+                <p>Prácticas en el Hospital San Juan de Dios Sevilla en el departamento de RRHH (3 meses)</p>
+                <h3>HISTORIAL ACADÉMICO</h3>
+                <p>ESO en Santa Joaquina de Vedruna, Sevilla 2013 - 2017</p>
+                <p>Bachillerato Ciencias Sociales en Santa Joaquina de Vedruna, Sevilla 2017 - 2019</p>
+                <p>Grado Superior en Administración y Finanzas en Santa Joaquina de Vedruna, Sevilla 2020-2022</p>
+                <h3>TECNOLOGIAS DE PROGRAMACIÓN</h3>
+                <P>Java</P>
+                <P>HTML,CSS,JavaScript</P>
+                <P>Mysql</P>
+                <P>MongoDB</P>
+                <h3>DATOS DE INTERÉS</h3>
+                <p>Carnet de conducir tipo B</p>
+                <p>Disponibilidad para viajar</p>
+                <p>Disponibilidad horaria</p>
+            </div>
+            </div>
+        </div>
+        <form>
+            <select name="modulo" id="modulo" class="form-control">
+                <option value="all">All</option>
+                <option value="java">Java</option>
+                <option value="html">HTML CSS JS</option>
+                <option value="mysql">MYSQL</option>
+            </select>
+        </form>
+        <!-- <div class="titulo-porfolio">Portfolio</div> -->
+        <div class="contenedor">
+            <div class="card card1">
+                <img src="../JoseMariaPerezVazquez_Portfolio/media/img/java-icon.svg" alt="iconJava">
+                <h2 class="java">JAVA</h2>
+                <div class="texto">
+                    <span >
+                        <ul>
+                            <p>Corre Timmy</p>
+                            <p>Maths Training</p>
+                            <p>Algoritmo de Luhn</p>
+                        </ul>
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="card card2">
+                <img src="../JoseMariaPerezVazquez_Portfolio/media/img/htmlcssjs.png" alt="IconHtmlCssJs">
+                <h2 class="html">HTML CSS JS</h2>
+                <div class="texto">
+                    <span>
+                        <ul>
+                            <p>XML XSD</p>
+                            <p>Tienda de Muebles</p>
+                            <p>Spiderman</p>
+                        </ul>
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="card card3">
+                <img src="../JoseMariaPerezVazquez_Portfolio/media/img/mysql-official.svg" alt="IconMysql" height="150"
+                    width="300">
+                <h2 class="mysql">MYSQL</h2>
+                <div class="texto">
+                    <span>
+                        <ul>
+                            <p>Trabajo 360º (Sistemas)</p>
+                            <p>Modelado</p>
+                            
+                        </ul>
+                    </span>
+                </div>
+            </div>
+            <div id="contact" class="container">
+                <form action="mailto:tuMail@vedruna.es" method="get" class="mt-2 mx-auto">
+                    <fieldset class="form-row reset p-4 align-items-center border border-primary ">
+                        <legend class="reset text-light border border-primary px-2 py-1">Contact me</legend>
+        
+                        <div class="form-group row g-3 mt-1 mx-auto">
+                            <label for="subject" class="col-sm-2 col-form-label text-primary">Asunto:</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="subject" class="form-control text-info" name="subject" required />
+                            </div>
+                        </div>
+        
+                        <div class="form-group row g-3 mt-1 mx-auto">
+                            <label for="cc" class="col-sm-2 col-form-label text-primary">CC:</label>
+                            <div class="col input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                  </div>
+                                <input type="email" id="cc" class="form-control text-info" name="cc" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                            </div>
+                        </div>
+        
+                        <div class="row g-3 mt-2 mx-auto">
+                            <label for="body" class="form-label text-primary">Cuerpo del mensaje: </label> <br />
+                            <textarea id="body" class="form-control text-info mt-2 w-10" name="body" placeholder="Aqui va el cuerpo del mensaje..." rows="15" cols="40"
+                                required></textarea>
+                        </div>
+        
+                        <div class="row g-3 mt-2 w-25 mx-auto">
+                            <input id="sendBttn" class="btn btn-primary btn-lg" type="submit" value="Send" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="pie">
+            <footer> 2022-23 José María Pérez Vázquez</footer>
+        </div>
+    </div>
+</body>
+
+</html>
